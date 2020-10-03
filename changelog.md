@@ -1,5 +1,7 @@
 ## 1.5.6 (in development)
 
+<!--- Begin changes - Do not remove -->
+
 -   Fix: [#377] Fixed the layout which was broken when width < 768px
 -   Fix: Fixed behavior of calendar when moving to next/previous month when current day is in the range of 29-31.
 -   Fix: [#334] Improving performance of overall balance calculation and fixing balance target date after month change
@@ -10,8 +12,11 @@
 -   Enhancement: [#357] Adding flexible table format for month calendar with variable number of entries per day
 -   Enhancement: [#383] Add system default theme that auto-detect if dark or light mode is set
 
+<!--- End changes - Do not remove -->
 
 Who built 1.5.6:
+
+<!--- Begin users - Do not remove -->
 
 -   thamara
 -   parikhdhruv24791
@@ -21,6 +26,8 @@ Who built 1.5.6:
 -   ibamibrhm
 -   kumaranshu72
 -   06b
+
+<!--- End users - Do not remove -->
 
 ## 1.5.5
 
