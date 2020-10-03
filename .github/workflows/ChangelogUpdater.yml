@@ -24,7 +24,7 @@ jobs:
           git config --global user.name 'Changelog Bot'
           git config --global user.email 'changelog-bot@users.noreply.github.com'
       - name: Update Changelog
-        if: steps.check.outputs.triggered == 'true' && github.event.comment.user.login == 'thamara'
+        if: steps.check.outputs.triggered == 'true' && github.event.comment.user.login == 'thamara' && steps.check.outputs.triggered == 'true'
         env:
           COMMENT_BODY: ${{ github.event.comment.body }}
           USER: ${{ github.event.comment.user.login }}
@@ -34,6 +34,7 @@ jobs:
           echo $COMMENT_BODY > comment_body.file
           python3 scripts/update-changelog.py changelog.md comment_body.file
       - name: Commit changelog
+        if: steps.check.outputs.triggered == 'true'
         run: |
           git add changelog.md
           git commit -nm "Updated changelog.md"
